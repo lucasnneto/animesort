@@ -1,23 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
+import http from "./service/axios";
+import Nav from "./nav/index"
+import Main from "./yourAnimes/index"
+import Anime from "./allAnimes/index"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 function App() {
+  useEffect(() => {
+    http.get('/season/2021/summer')
+      .then(
+        (result) => {
+          console.log(result.data)
+        }
+      )
+      .catch((err) => {
+        console.error(err)
+      })
+  }, [])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Nav />
+        <Switch>
+          <Route exact path="/">
+            <Main />
+          </Route>
+          <Route path="/anime">
+            <Anime />
+          </Route>
+        </Switch>
+
+      </Router>
     </div>
   );
 }

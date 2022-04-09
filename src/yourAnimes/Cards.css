@@ -1,0 +1,56 @@
+.bodyCard{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  position: relative;
+}
+.imgCard{
+  background: no-repeat center;
+    background-size: cover;   
+  background-image: url(https://i.pinimg.com/originals/31/f3/ef/31f3ef01414add1201930f29f39f4d3b.jpg);
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100px;
+}
+.removeIcon{
+  cursor: pointer;
+  height: 50px;
+  
+}
+.bodyCard:hover .removeIcon{
+  display: block !important;
+} 
+.bodyCard .img{
+  max-height: 70px;
+    height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.titlecode{
+  display: flex;
+  align-items: center;
+}
+span{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+.titleCard{
+  font-size: 20px;
+  margin-right: 10px;
+}
+.codeCard{
+  font-size: 10px;
+  color: #808191;
+}
+p{
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+}
+.BaseText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

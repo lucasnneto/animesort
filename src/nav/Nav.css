@@ -1,0 +1,44 @@
+.nav {
+  width: 270px;
+  min-width: 270px;
+  max-width: 270px;
+  padding-top: 50px;
+} 
+@media screen and (max-width: 900px) {
+  .nav{
+    display: none;
+  }
+}
+.title{
+  font-size: 26px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+.title span{
+  color: #FF7C5D;
+}
+.line{
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.line img{
+  height: 20px;
+  margin-right: 16px;
+}
+.line{
+  font-family: 'Inter', sans-serif;
+}
+.line:hover{
+  cursor: pointer;
+}
+.selected{
+  background-color: #3F8CFF;
+  margin-right: 10px
+}

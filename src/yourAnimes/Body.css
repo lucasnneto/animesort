@@ -1,0 +1,92 @@
+h2, h1,p{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 140px;
+  padding-right: 140px;
+  background-color: #1F1F1F;
+}
+@media screen and (max-width: 1200px) {
+  .body{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+ @media screen and (max-width: 900px) {
+  .body{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+} 
+.titleBody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+h2{
+  font-weight: 500;
+}
+h1{
+  font-weight: 600;
+}
+.three{
+  font-family: 'Inter', sans-serif;
+  
+}
+.listMain{
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.cardbt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardbt img{
+  width: 60px;
+  margin-bottom: 15px;
+}
+.cardbt:nth-child(2) img{
+  width: 80px;
+}
+.number{
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+}
+.score{
+  color: #808191;
+  font-size: 12px;
+}
+.headerCard{
+  width: 150%;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.remove{
+  width: 20px !important;
+  margin:0 !important;
+}
+.cardbt:hover .remove{
+  display: block !important;
+}
+.ListCards{
+  overflow-y: auto;
+  margin-top: 25px;
+}
+.headerTitle{
+  display: flex;
+  justify-content: space-between;
+}
+.headerTitle img{
+  cursor: pointer;
+}
