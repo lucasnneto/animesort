@@ -1,5 +1,14 @@
 .App {
   height: 100vh;
   display: flex;
-  flex-direction: row;
-} 
+  flex-direction: column;
+  overflow: hidden;
+}
+.logo {
+  font-size: 30px;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+.logo span {
+  color: #ff7c5d;
+}

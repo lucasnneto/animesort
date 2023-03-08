@@ -1,5 +1,5 @@
-const axios = require('axios');
+const axios = require("axios");
 const http = axios.create({
-  baseURL: 'https://api.jikan.moe/v3',
+  baseURL: "https://api.jikan.moe/v4",
 });
 export default http;

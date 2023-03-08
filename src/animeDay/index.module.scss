@@ -1,0 +1,147 @@
+.title-1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+.title-2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sidemenu {
+  margin-left: 15px;
+
+  .title {
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+.otherCard {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  background: #242731;
+  padding: 15px 20px 10px 20px;
+  border-radius: 24px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  .base {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+      font-family: "Inter";
+      font-size: 13px;
+    }
+    .description {
+      width: 70%;
+      color: #808191;
+      font-size: 12px;
+    }
+    .eps {
+      color: #80819181;
+      font-size: 12px;
+    }
+    .fav {
+      color: #ff7c5d;
+      font-size: 14px;
+    }
+  }
+  .img {
+    overflow: hidden;
+    position: absolute;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    right: -50%;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    img {
+      width: 80px;
+    }
+  }
+}
+.mainCard {
+  display: flex;
+  padding: 30px 30px;
+  background-color: #ff7c5d;
+  border-radius: 24px;
+  margin-top: 20px;
+  align-items: center;
+  max-width: 680px;
+
+  .logo {
+    min-height: 350px;
+    height: 350px;
+    min-width: 350px;
+
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 350px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .logo {
+      min-height: 250px;
+      height: 250px;
+      min-width: 250px;
+      img {
+        width: 250px;
+      }
+    }
+  }
+  .base {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .tags {
+      display: flex;
+      justify-content: space-between;
+      span {
+        text-transform: uppercase;
+        font-size: 8px;
+        background-color: #7a49a5;
+        padding: 3px 8px;
+        border-radius: 16px;
+        font-family: "Inter";
+      }
+    }
+    .eps {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .synopsis {
+      font-size: 14px;
+      margin-top: 20px;
+      font-family: "Inter";
+      line-height: 24px;
+      text-align: justify;
+    }
+    .fav {
+      background-color: #242731;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      width: 160px;
+      height: 50px;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      align-self: center;
+      margin-top: 20px;
+    }
+  }
+}

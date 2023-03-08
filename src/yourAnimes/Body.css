@@ -1,92 +1,92 @@
-h2, h1,p{
+h2,
+h1,
+p {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 30px;
   padding-left: 140px;
   padding-right: 140px;
-  background-color: #1F1F1F;
+  background-color: #1f1f1f;
 }
 @media screen and (max-width: 1200px) {
-  .body{
+  .body {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
- @media screen and (max-width: 900px) {
-  .body{
+@media screen and (max-width: 900px) {
+  .body {
     padding-left: 60px;
     padding-right: 60px;
   }
-} 
-.titleBody{
+}
+.titleBody {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
 }
-h2{
+h2 {
   font-weight: 500;
 }
-h1{
+h1 {
   font-weight: 600;
 }
-.three{
-  font-family: 'Inter', sans-serif;
-  
+.three {
+  font-family: "Inter", sans-serif;
 }
-.listMain{
+.listMain {
   margin-top: 20px;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
 }
-.cardbt{
+.cardbt {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.cardbt img{
+.cardbt img {
   width: 60px;
   margin-bottom: 15px;
 }
-.cardbt:nth-child(2) img{
+.cardbt:nth-child(2) img {
   width: 80px;
 }
-.number{
-  font-family: 'Inter', sans-serif;
+.number {
+  font-family: "Inter", sans-serif;
   font-size: 22px;
 }
-.score{
+.score {
   color: #808191;
   font-size: 12px;
 }
-.headerCard{
+.headerCard {
   width: 150%;
   padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.remove{
+.remove {
   width: 20px !important;
-  margin:0 !important;
+  margin: 0 !important;
 }
-.cardbt:hover .remove{
+.cardbt:hover .remove {
   display: block !important;
 }
-.ListCards{
+.ListCards {
   overflow-y: auto;
   margin-top: 25px;
 }
-.headerTitle{
+.headerTitle {
   display: flex;
   justify-content: space-between;
 }
-.headerTitle img{
+.headerTitle img {
   cursor: pointer;
 }

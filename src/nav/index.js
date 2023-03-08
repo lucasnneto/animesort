@@ -1,32 +1,48 @@
-import './Nav.css'
-import Lista from "../assets/lista.svg"
-import Podium from "../assets/podium.svg"
+import "./Nav.css";
+import Lista from "../assets/lista.svg";
+import Podium from "../assets/podium.svg";
+import LogoAnime from "../logo";
 import { useHistory, useLocation } from "react-router-dom";
 const rotas = {
-  lista: '/',
-  todos: '/anime'
-}
+  dia: "/",
+  todos: "/my",
+  fav: "/fav",
+};
 function Nav() {
   let history = useHistory();
   const location = useLocation();
   let rota = location.pathname;
   function handleClick(link) {
-    rota = link
+    rota = link;
     history.push(link);
   }
   return (
     <div className="nav">
-      <h1 className="title">AnimeSort<span>.</span></h1>
-      <div className={"line " + (rota === rotas.todos ? 'selected' : '')} onClick={() => handleClick(rotas.todos)} >
-        <img src={Lista} alt="" />
-        <span>Todos Animes</span>
+      <LogoAnime></LogoAnime>
+      <div className="options">
+        <div
+          className={"line " + (rota === rotas.dia ? "selected" : "")}
+          onClick={() => handleClick(rotas.dia)}
+        >
+          <img src={Lista} alt="" />
+          <span>Anime do dia</span>
+        </div>
+        {/* <div
+          className={"line " + (rota === rotas.todos ? "selected" : "")}
+          onClick={() => handleClick(rotas.todos)}
+        >
+          <img src={Podium} alt="" />
+          <span>Lista</span>
+        </div>
+        <div
+          className={"line " + (rota === rotas.fav ? "selected" : "")}
+          onClick={() => handleClick(rotas.fav)}
+        >
+          <img src={Podium} alt="" />
+          <span>Favoritos</span>
+        </div> */}
       </div>
-      <div className={"line " + (rota === rotas.lista ? 'selected' : '')} onClick={() => handleClick(rotas.lista)}>
-        <img src={Podium} alt="" />
-        <span>Sua Lista</span>
-      </div>
-
-    </div >
+    </div>
   );
 }
 

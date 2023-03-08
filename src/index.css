@@ -1,6 +1,19 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   height: 100vh;
-  background-color: #1a1a1a;
-  color:white;
+  background-color: #1f1f1f;
+  color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
