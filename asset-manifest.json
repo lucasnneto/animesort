@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/animesort/static/css/main.72934162.chunk.css",
+    "main.js": "/animesort/static/js/main.75089b0e.chunk.js",
+    "main.js.map": "/animesort/static/js/main.75089b0e.chunk.js.map",
+    "runtime-main.js": "/animesort/static/js/runtime-main.af824193.js",
+    "runtime-main.js.map": "/animesort/static/js/runtime-main.af824193.js.map",
+    "static/js/2.6942dc08.chunk.js": "/animesort/static/js/2.6942dc08.chunk.js",
+    "static/js/2.6942dc08.chunk.js.map": "/animesort/static/js/2.6942dc08.chunk.js.map",
+    "index.html": "/animesort/index.html",
+    "static/css/main.72934162.chunk.css.map": "/animesort/static/css/main.72934162.chunk.css.map",
+    "static/js/2.6942dc08.chunk.js.LICENSE.txt": "/animesort/static/js/2.6942dc08.chunk.js.LICENSE.txt",
+    "static/media/Novo.317a7c4b.svg": "/animesort/static/media/Novo.317a7c4b.svg",
+    "static/media/lista.0cb63bf1.svg": "/animesort/static/media/lista.0cb63bf1.svg",
+    "static/media/remove.0cbb3049.svg": "/animesort/static/media/remove.0cbb3049.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af824193.js",
+    "static/js/2.6942dc08.chunk.js",
+    "static/css/main.72934162.chunk.css",
+    "static/js/main.75089b0e.chunk.js"
+  ]
+}
