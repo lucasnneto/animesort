@@ -1,6 +1,6 @@
 import "./Nav.css";
 import Lista from "../assets/lista.svg";
-import Podium from "../assets/podium.svg";
+// import Podium from "../assets/podium.svg";
 import LogoAnime from "../logo";
 import { useHistory, useLocation } from "react-router-dom";
 const rotas = {

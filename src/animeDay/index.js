@@ -6,7 +6,7 @@ import OtherCard from "./otherCard";
 
 export default function AnimeDay() {
   const [anime, setAnime] = useState({});
-  const [oAnime, setOAnime] = useState([]);
+  const [oAnime] = useState([]);
   const [loading, setLoading] = useState(false);
   function getRandomItem(arr) {
     const randomIndex = Math.floor(Math.random() * arr.length);
@@ -63,10 +63,12 @@ export default function AnimeDay() {
         );
         const getList = JSON.parse(localStorage.getItem("animelist") || "[]");
         setAnime(getLastAnimeData);
-        setOAnime(getList);
+        oAnime.splice(0, oAnime.length);
+        oAnime.push(...getList);
       }
       setLoading(false);
     })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div className="body" style={{ overflow: "auto" }}>

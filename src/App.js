@@ -4,7 +4,7 @@ import "./App.css";
 import Nav from "./nav/index";
 import Main from "./yourAnimes/index";
 import Anime from "./animeDay/index";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   // useEffect(() => {
@@ -19,7 +19,7 @@ function App() {
   // }, []);
   return (
     <div className="App">
-      <Router>
+      <Router basename="/">
         <Nav />
         <Switch>
           <Route exact path="/">

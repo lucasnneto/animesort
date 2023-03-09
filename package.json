@@ -2,7 +2,7 @@
   "name": "animesort",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lucasnneto.github.io/animesort",
+  "homepage": "https://lucasnneto.github.io/animesort/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -20,6 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "push-dir --dir=build --branch=gh-pages --cleanup"
   },
   "eslintConfig": {

@@ -17,7 +17,9 @@ export default function OtherCard({
         <p className={style.title}>{title.slice(0, 10)}</p>
         <p className={style.description}>{synop}</p>
         <p className={style.eps}>{episodes} eps.</p>
-        <a className={style.fav}>Favoritar</a>
+        <a className={style.fav} href="">
+          Favoritar
+        </a>
       </div>
       <div className={style.img}>
         <img src={logo} alt="anime-logo"></img>
