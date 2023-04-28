@@ -41,9 +41,18 @@ export default function AnimeDay() {
           ];
           animeData = await getAnimeDetail(selectedAnime.mal_id);
           const list = [];
-          list.push(await getAnimeDetail(listAnime[0].mal_id));
-          list.push(await getAnimeDetail(listAnime[1].mal_id));
-          list.push(await getAnimeDetail(listAnime[2].mal_id));
+
+          await new Promise((res) => {
+            let animes = 0;
+            let timeout = setInterval(async () => {
+              list.push(await getAnimeDetail(listAnime[animes].mal_id));
+              if (animes === 2) {
+                clearInterval(timeout);
+                res();
+              }
+              animes++;
+            }, 1000);
+          });
 
           oAnime.push(...list.filter((el) => !!el));
           localStorage.setItem(
@@ -89,15 +98,17 @@ export default function AnimeDay() {
           </div>
           <div className={styles.sidemenu}>
             <p className={styles.title}>Outros animes</p>
-            {oAnime.map((an) => (
-              <OtherCard
-                key={an.mal_id}
-                logo={an.images?.jpg?.image_url}
-                synopsis={an.synopsis}
-                episodes={an.episodes}
-                title={an.title}
-              ></OtherCard>
-            ))}
+            <div className={styles.sidemenulist}>
+              {oAnime.map((an) => (
+                <OtherCard
+                  key={an.mal_id}
+                  logo={an.images?.jpg?.image_url}
+                  synopsis={an.synopsis}
+                  episodes={an.episodes}
+                  title={an.title}
+                ></OtherCard>
+              ))}
+            </div>
           </div>
         </div>
       )}

@@ -24,6 +24,12 @@ p {
     padding-right: 60px;
   }
 }
+@media screen and (max-width: 780px) {
+  .body {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 .titleBody {
   display: flex;
   flex-direction: column;

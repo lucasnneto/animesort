@@ -31,3 +31,13 @@
   background-color: #3f8cff;
   margin-right: 10px;
 }
+@media screen and (max-width: 780px) {
+  .nav {
+    height: 35px;
+    min-height: 35px;
+    max-height: 35px;
+  }
+  .line {
+    display: none;
+  }
+}

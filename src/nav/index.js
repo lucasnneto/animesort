@@ -1,12 +1,12 @@
 import "./Nav.css";
 import Lista from "../assets/lista.svg";
-// import Podium from "../assets/podium.svg";
+import Podium from "../assets/podium.svg";
 import LogoAnime from "../logo";
 import { useHistory, useLocation } from "react-router-dom";
 const rotas = {
   dia: "/",
-  todos: "/my",
-  fav: "/fav",
+  todos: "/list",
+  fav: "/my",
 };
 function Nav() {
   let history = useHistory();
@@ -27,13 +27,14 @@ function Nav() {
           <img src={Lista} alt="" />
           <span>Anime do dia</span>
         </div>
-        {/* <div
+        <div
           className={"line " + (rota === rotas.todos ? "selected" : "")}
           onClick={() => handleClick(rotas.todos)}
         >
           <img src={Podium} alt="" />
           <span>Lista</span>
         </div>
+        {/*
         <div
           className={"line " + (rota === rotas.fav ? "selected" : "")}
           onClick={() => handleClick(rotas.fav)}

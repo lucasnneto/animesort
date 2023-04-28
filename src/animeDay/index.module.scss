@@ -13,6 +13,17 @@
   flex-direction: row;
   justify-content: space-between;
 }
+@media screen and (max-width: 780px) {
+  .menu {
+    flex-direction: column;
+  }
+  .sidemenu {
+    margin-left: 0px !important;
+    .title {
+      margin-top: 20px;
+    }
+  }
+}
 .sidemenu {
   margin-left: 15px;
 
@@ -23,6 +34,23 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 780px) {
+  .sidemenulist {
+    display: flex;
+    justify-content: center;
+    > div {
+      margin-right: 20px;
+    }
+    > div:last-child {
+      display: none;
+      margin-right: 0px;
+    }
+    .img {
+      display: none;
+    }
+  }
+}
+
 .otherCard {
   width: 150px;
   height: 150px;
@@ -51,8 +79,9 @@
       font-size: 12px;
     }
     .fav {
-      color: #ff7c5d;
+      color: var(--primary-color);
       font-size: 14px;
+      text-decoration: none;
     }
   }
   .img {
@@ -70,36 +99,52 @@
     }
   }
 }
+@media screen and (max-width: 780px) {
+  .otherCard {
+    .base {
+      .description {
+        width: 100%;
+      }
+      .fav {
+        text-align: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 780px) {
+  .mainCard {
+    flex-direction: column;
+  }
+}
 .mainCard {
   display: flex;
   padding: 30px 30px;
-  background-color: #ff7c5d;
+  background-color: var(--primary-color);
   border-radius: 24px;
   margin-top: 20px;
   align-items: center;
   max-width: 680px;
 
   .logo {
-    min-height: 350px;
-    height: 350px;
-    min-width: 350px;
+    min-height: 50vh;
+    height: 50vh;
+    min-width: 50vh;
+    width: 50vw;
 
     border-radius: 50%;
     overflow: hidden;
     img {
-      width: 350px;
+      width: 100%;
     }
   }
   @media screen and (max-width: 900px) {
     .logo {
-      min-height: 250px;
-      height: 250px;
-      min-width: 250px;
-      img {
-        width: 250px;
-      }
+      min-height: 40vh;
+      height: 40vh;
+      min-width: 40vh;
     }
   }
+
   .base {
     margin-left: 30px;
     display: flex;
@@ -107,11 +152,11 @@
     justify-content: center;
     .tags {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       span {
         text-transform: uppercase;
         font-size: 8px;
-        background-color: #7a49a5;
+        background-color: var(--secondary-color);
         padding: 3px 8px;
         border-radius: 16px;
         font-family: "Inter";
@@ -142,6 +187,19 @@
       cursor: pointer;
       align-self: center;
       margin-top: 20px;
+    }
+  }
+  @media screen and (max-width: 780px) {
+    .logo {
+      min-height: 50vw;
+      height: 50vw;
+      min-width: 50vw;
+    }
+    .eps {
+      margin-top: 10px;
+    }
+    .base {
+      margin-left: 0;
     }
   }
 }

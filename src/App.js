@@ -4,6 +4,7 @@ import "./App.css";
 import Nav from "./nav/index";
 import Main from "./yourAnimes/index";
 import Anime from "./animeDay/index";
+import List from "./listAnimes/index";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Anime />
+          </Route>
+          <Route exact path="/list">
+            <List />
           </Route>
           <Route exact path="/my">
             <Main />
